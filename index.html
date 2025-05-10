@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://open.spotify.com/favicon.ico">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left bg-black">
+            <div class="close">
+                <img class="invert" src="close.svg" width="30">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width="110" class="invert" src="logo.svg"></div>
+                <ul>
+                    <li><img class="invert" src="home_logo.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search_logo.svg" alt="">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="">
+                    <h2>Your Library</h2>
+
+                </div>
+
+                <div class="songList">
+
+
+
+
+                    <div class="songs song1">
+                        <img class="invert" src="music.svg" alt="">
+                        <span class="songname">Smoke-Lish</span>
+                        <audio id="audioPlayer1" src="songs/song1.mp3"></audio>
+                        <span class="button">
+                            <button>Play Now</button>
+                            <span class="resume">
+                                <img id="playPauseIcon1" src="resume.svg"
+                                    onclick="togglePlay('audioPlayer1', 'playPauseIcon1', 'Smoke-Lish')"
+                                    alt="Play/Pause Icon">
+                            </span>
+                        </span>
+
+
+
+
+                    </div>
+
+                    <div class="songs song2">
+                        <img class="invert" src="music.svg" alt="">
+                        <span class="songname">Huevo-Luna</span>
+                        <audio id="audioPlayer2" src="songs/song2.mp3"></audio>
+                        <span class="button">
+                            <button>Play Now</button>
+                            <span class="resume">
+                                <img id="playPauseIcon2" src="resume.svg"
+                                    onclick="togglePlay('audioPlayer2', 'playPauseIcon2','Huevo-Luna')"
+                                    alt="Play/Pause Icon">
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="songs song3">
+                        <img class="invert" src="music.svg" alt="">
+                        <span class="songname">Cosmic-Lish</span>
+                        <audio id="audioPlayer3" src="songs/song3.mp3"></audio>
+                        <span class="button">
+                            <button>Play Now</button>
+                            <span class="resume">
+                                <img id="playPauseIcon3" src="resume.svg"
+                                    onclick="togglePlay('audioPlayer3', 'playPauseIcon3','Cosmic-Lish')"
+                                    alt="Play/Pause Icon">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="songs song4">
+                        <img class="invert" src="music.svg" alt="">
+                        <span class="songname">Owls-Ambient</span>
+                        <audio id="audioPlayer4" src="songs/song4.mp3"></audio>
+                        <span class="button">
+                            <button>Play Now</button>
+                            <span class="resume">
+                                <img id="playPauseIcon4" src="resume.svg"
+                                    onclick="togglePlay('audioPlayer4', 'playPauseIcon4', 'Owls-Ambient')"
+                                    alt="Play/Pause Icon">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="songs song5">
+                        <img class="invert" src="music.svg" alt="">
+                        <span class="songname">Moonlight-HJ</span>
+                        <audio id="audioPlayer5" src="songs/song5.mp3"></audio>
+                        <span class="button">
+                            <button>Play Now</button>
+                            <span class="resume">
+                                <img id="playPauseIcon5" src="resume.svg"
+                                    onclick="togglePlay('audioPlayer5', 'playPauseIcon5', 'Moonlight-HJ')"
+                                    alt="Play/Pause Icon">
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="songs song6">
+                        <img class="invert" src="music.svg" alt="">
+                        <span class="songname">Waves-Happy</span>
+                        <audio id="audioPlayer6" src="songs/song6.mp3"></audio>
+                        <span class="button">
+                            <button>Play Now</button>
+                            <span class="resume">
+                                <img id="playPauseIcon6" src="resume.svg"
+                                    onclick="togglePlay('audioPlayer6', 'playPauseIcon6', 'Waves-Happy')"
+                                    alt="Play/Pause Icon">
+                            </span>
+                        </span>
+                    </div>
+
+                    <!-- <div class="songs song7">
+                        <img class="invert" src="music.svg" alt="">
+                        <span class="songname">Abroad Again-Jeremy Blake</span>
+                        <audio id="audioPlayer7 src="songs/song7.mp3"></audio>
+                        <span class="button">
+                            <button>Play Now</button> 
+                            <span class="resume">
+                                <img id="playPauseIcon" src="resume.svg" onclick="playAudio()" alt="Play/Pause Icon">
+                            </span>
+                        </span>
+                    </div> -->
+
+
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img src="hamburger.svg" width="30" class="invert hamburger">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Login</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt="">
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d" alt="">
+                        <h2>Chillout Lounge</h2>
+                        <p>Just lean back and enjoy relaxed beats</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000255be59b7be2929112e7ac927" alt="">
+                        <h2>lofi beats</h2>
+                        <p>chill beats, lofi vibes, new tracks every week...</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002472120b92edea982b5feb264" alt="">
+                        <h2>Jazz mix</h2>
+                        <p>Soft instrumental Jazz for all your activities.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000283da657fca565320e9311863" alt="">
+                        <h2>Peaceful Piano</h2>
+                        <p>Peaceful piano to help you slow down, breathe, and relax</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d6710ea346fec48e89d77dba" alt="">
+                        <h2>All out 80s</h2>
+                        <p>The biggest songs of the 1980s. Cover: Bruce Springsteen</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000024a83d42ca84e63abc9413b5d" alt="">
+                        <h2>Rock Classics</h2>
+                        <p>Rock legends & epic songs that continue to inspire generations. Cover: The Rolling Stones</p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000025db1394baf8862336f19ac83" alt="">
+                        <h2>Stress Relief</h2>
+                        <p>Calm your mind from anxiety with gentle piano and ambient music.
+                        </p>
+                    </div>
+
+                   
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000255be59b7be2929112e7ac927" alt="">
+                        <h2>lofi beats</h2>
+                        <p>chill beats, lofi vibes, new tracks every week...</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d" alt="">
+                        <h2>Chillout Lounge</h2>
+                        <p>Just lean back and enjoy relaxed beats</p>
+                    </div>
+
+                    
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002472120b92edea982b5feb264" alt="">
+                        <h2>Jazz mix</h2>
+                        <p>Soft instrumental Jazz for all your activities.</p>
+                    </div>
+
+                    
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define the circular background -->
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <!-- Define the smaller triangle with padding inside the circle -->
+                                <path d="M7 18V6L17 12L7 18Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt="">
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                </div>
+                <div class="playbar">
+                    <div class="seekbar" onmousedown="startDrag(event)">
+                        <div class="circle"></div>
+
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <img src="previous.svg" alt="Previous" id="previousButton">
+                            <img src="resume.svg" alt="Play/Pause" id="playPauseButton">
+                            <img src="next.svg" alt="Next" id="nextButton">
+                        </div>
+                        
+                        <div class="volume-controls">
+                            <div class="songtime"></div>
+                            <img src="volume.svg" alt="Volume" id="volumeIcon" onclick="toggleMute()">
+                            <!-- <input type="range" id="volumeSlider" min="0" max="100" value="50" onchange="adjustVolume()"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="spotify.js"></script>
+</body>
+
+</html>
